@@ -1,0 +1,87 @@
+{
+  "header": {
+    "nav": {
+      "contact": "Contact Us",
+      "liveBroadcast": "Live Broadcast",
+      "contests": "Contests",
+      "services": "Services",
+      "about": "About Mayadeen"
+    },
+    "search": "Search ...",
+    "account": "My Account"
+  },
+  "hero": {
+    "title": "Main Title",
+    "subtitle": "Subtitle or details go here",
+    "buttonText": "Go to",
+    "boxes": [
+      {
+        "date": "20/03/2025",
+        "title": "Main Title",
+        "description": "Subtitle or details go here"
+      },
+      {
+        "date": "20/03/2025",
+        "title": "Main Title",
+        "description": "Subtitle or details go here"
+      },
+      {
+        "date": "20/03/2025",
+        "title": "Main Title",
+        "description": "Subtitle or details go here"
+      },
+      {
+        "date": "20/03/2025",
+        "title": "Main Title",
+        "description": "Subtitle or details go here"
+      }
+    ]
+  },
+  "raceCalendar": {
+    "title": "Race Calendar",
+    "eventsTitle": "Events",
+
+    "days": {
+      "0": "Sunday",
+      "1": "Monday",
+      "2": "Tuesday",
+      "3": "Wednesday",
+      "4": "Thursday",
+      "5": "Friday",
+      "6": "Saturday"
+    },
+    "raceDetails": {
+      "title": "Race Name",
+      "category": "Category",
+      "date": "06 June 2024",
+      "time": "05:30 PM - 07:30 PM",
+      "distance": "Distance: 4 km",
+      "type": "Surface: Sand",
+      "age": "Age: 3 years",
+      "prize": "Prize: 100,000 SAR",
+      "button": "Details"
+    }
+  },
+  "footer": {
+    "newsletter": {
+      "title": "News letter",
+      "description": "Text or description goes here",
+      "placeholder": "name@domain.com",
+      "subscribe": "Subscribe"
+    },
+    "links": {
+      "about": "About Mayadeen",
+      "services": "Services",
+      "contests": "Contests",
+      "liveBroadcast": "Live Broadcast",
+      "contact": "Contact Us"
+    },
+    "legal": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms & Conditions",
+      "charter": "Customer Charter",
+      "tools": "Site Tools",
+      "copyright": "All rights reserved"
+    }
+  }
+}

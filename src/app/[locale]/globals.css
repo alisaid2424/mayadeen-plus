@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: var(--font-helvetica-arabic), sans-serif;
+}
+
+@layer components {
+  .navLinks a {
+    @apply hover:text-[#ffbf00] duration-200 transition-colors font-semibold;
+  }
+}
