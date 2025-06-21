@@ -55,10 +55,10 @@
       "category": "Category",
       "date": "06 June 2024",
       "time": "05:30 PM - 07:30 PM",
-      "distance": "Distance: 4 km",
-      "type": "Surface: Sand",
-      "age": "Age: 3 years",
-      "prize": "Prize: 100,000 SAR",
+      "distance": "Distance:",
+      "type": "Surface: ",
+      "age": "Age:",
+      "prize": "Prize:",
       "button": "Details"
     }
   },

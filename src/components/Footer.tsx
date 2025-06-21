@@ -7,13 +7,16 @@ const Footer = () => {
 
   return (
     <footer className="bg-[#000000E6] text-white">
-      <div className="container py-10 flex flex-col md:flex-row items-center justify-between flex-wrap gap-10">
+      <div
+        className="container py-10 flex flex-col md:flex-row items-center md:items-start justify-between flex-wrap 
+      gap-8"
+      >
         {/* Logo and Social Icons */}
         <div className="flex flex-col w-full justify-between items-center md:items-start space-y-10 flex-1">
-          <div className="flex flex-col gap-10 items-center md:flex-row md:items-center">
+          <div className="flex flex-col gap-10 items-center lg:flex-row md:items-start lg:items-center">
             <Image src="/logo.svg" alt="logo-img" width={193} height={58} />
 
-            <div className="flex items-center gap-5">
+            <div className="flex items-center gap-7">
               {/* TikTok SVG */}
               <Link href="#" aria-label="TikTok">
                 <svg
@@ -56,40 +59,40 @@ const Footer = () => {
           </div>
 
           {/* Navigation Links */}
-          <div className="flex flex-wrap justify-between items-center sm:w-2/3 space-x-1 sm:space-x-3 whitespace-nowrap">
-            <Link href="#" className="hover:text-gray-300 text-sm lg:text-lg">
+          <div className="flex flex-wrap justify-between items-center gap-2 lg:gap-5">
+            <Link href="#" className="hover:text-gray-300 text-sm lg:text-base">
               {trans("links.about")}
             </Link>
-            <Link href="#" className="hover:text-gray-300 text-sm lg:text-lg">
+            <Link href="#" className="hover:text-gray-300 text-sm lg:text-base">
               {trans("links.services")}
             </Link>
-            <Link href="#" className="hover:text-gray-300 text-sm lg:text-lg">
+            <Link href="#" className="hover:text-gray-300 text-sm lg:text-base">
               {trans("links.contests")}
             </Link>
-            <Link href="#" className="hover:text-gray-300 text-sm lg:text-lg">
+            <Link href="#" className="hover:text-gray-300 text-sm lg:text-base">
               {trans("links.liveBroadcast")}
             </Link>
-            <Link href="#" className="hover:text-gray-300 text-sm lg:text-lg">
+            <Link href="#" className="hover:text-gray-300 text-sm lg:text-base">
               {trans("links.contact")}
             </Link>
           </div>
         </div>
 
         {/* Newsletter */}
-        <div className="flex flex-col items-center md:items-start space-y-3 basis-1/3 ">
+        <div className="flex flex-col items-center md:items-start space-y-5 basis-1/3">
           <h3 className="text-lg font-semibold">{trans("newsletter.title")}</h3>
           <p className="text-sm text-gray-400">
             {trans("newsletter.description")}
           </p>
-          <form className="flex flex-col sm:flex-row gap-2 w-full max-w-sm">
+          <form className="flex flex-col lg:flex-row gap-[7px] w-full">
             <input
               type="email"
               placeholder={trans("newsletter.placeholder")}
-              className="w-full px-4 py-2 text-black rounded-md focus:outline-none"
+              className="px-4 py-2 text-black rounded-[10px] focus:outline-none lg:min-w-[338px]"
             />
             <button
               type="submit"
-              className="bg-green-600 text-white px-4 py-2 rounded-md"
+              className="bg-primary text-white px-4 py-2 rounded-[10px] lg:min-w-[150px]"
             >
               {trans("newsletter.subscribe")}
             </button>

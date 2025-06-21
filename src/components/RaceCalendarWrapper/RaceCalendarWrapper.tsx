@@ -7,11 +7,11 @@ const RaceCalendarWrapper = () => {
 
   return (
     <div className="container pt-14">
-      <h1 className="text-4xl sm:text-[61px] mb-8 text-primary font-bold w-fit flex items-center gap-2 group">
+      <h1 className="text-4xl sm:text-[61px] mb-14 text-primary font-bold w-fit flex items-center gap-2 group cursor-pointer">
         {trans("title")}
-        <span className="mb-6">
+        <span className="mb-1">
           <svg
-            className="size-5 mt-2 group-hover:translate-y-6 transition-all duration-300 rtl:rotate-180"
+            className="size-5 mt-2 group-hover:-translate-x-3 transition-all duration-300 rtl:rotate-180"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"

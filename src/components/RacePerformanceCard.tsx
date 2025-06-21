@@ -88,7 +88,7 @@ const RacePerformanceCard = () => {
         date: `${locale === "ar" ? " 25 ابريل" : "April 25"}`,
         odds: "12-1",
       },
-      daysAgo: `${locale === "ar" ? "يوم 49" : "Day 49"}`,
+      daysAgo: `${locale === "ar" ? "49 يوم" : "49 Day"}`,
     },
     {
       score: 61,
@@ -137,7 +137,7 @@ const RacePerformanceCard = () => {
         date: `${locale === "ar" ? " 25 ابريل" : "April 25"}`,
         odds: "12-1",
       },
-      daysAgo: `${locale === "ar" ? "يوم 2011 - 249" : "Day 2011 - 249"}`,
+      daysAgo: `${locale === "ar" ? "   249 يوم  - 2011 " : "2011 - 249 Day"}`,
     },
     {
       score: 54,
@@ -186,7 +186,7 @@ const RacePerformanceCard = () => {
         date: `${locale === "ar" ? " 25 ابريل" : "April 25"}`,
         odds: "12-1",
       },
-      daysAgo: `${locale === "ar" ? "يوم 49" : "Day 49"}`,
+      daysAgo: `${locale === "ar" ? "49 يوم" : "49 Day"}`,
     },
   ];
 
@@ -198,7 +198,7 @@ const RacePerformanceCard = () => {
           <div className="text-primary font-bold whitespace-nowrap text-[34px] mb-3">
             {race.daysAgo}
           </div>
-          <div className="flex flex-col-reverse  sm:flex-row justify-between items-center border rounded-md md:rounded-full flex-wrap gap-3 md:gap-4 px-10 py-4 shadow-sm bg-[#F2F2F2]">
+          <div className="flex flex-col-reverse  sm:flex-row-reverse justify-between items-center border rounded-md md:rounded-full flex-wrap gap-3 md:gap-4 px-10 py-4 shadow-sm bg-[#F2F2F2]">
             {/* Info text (3 lines) */}
             <div className="flex flex-col text-sm text-gray-600 space-y-1">
               {race.infoLines.map((line, i) => (
@@ -303,7 +303,7 @@ const RacePerformanceCard = () => {
       ))}
 
       {/* Workout Footer */}
-      <div className="bg-primary text-white rounded-md md:rounded-full py-4 px-6 mt-4 text-sm flex items-center justify-between gap-3 flex-wrap">
+      <div className="bg-primary text-white rounded-md md:rounded-full py-4 px-6 mt-4 text-sm flex items-center justify-between gap-3 flex-wrap flex-row-reverse">
         <span>WORKOUTS</span>
         <span>Aug3 SAR Dirt Gd: 4F in 49 2/5 (28 of 49) B</span>
         <span>Jul27 SAR Turf tr.Trm: 5F in 57 1/5 (1 of 2) B</span>
@@ -314,7 +314,7 @@ const RacePerformanceCard = () => {
             alt="right-arrow-circle"
             width={18}
             height={18}
-            className="w-8 h-8 border-white border-2 rounded-full"
+            className="w-8 h-8 border-white border-2 rounded-full ltr:rotate-180"
           />
         </span>
       </div>

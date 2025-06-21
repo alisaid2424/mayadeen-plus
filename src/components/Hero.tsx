@@ -12,26 +12,17 @@ const Hero = () => {
   }[];
 
   return (
-    <main className="relative min-h-[calc(100vh-133px)] overflow-hidden">
-      {/* background*/}
-      <Image
-        src="/home-page/main-img.svg"
-        alt="hero background"
-        fill
-        className="object-cover z-0"
-        priority
-      />
-
-      {/* Content over background*/}
-      <div className="relative z-10 container flex flex-col justify-center gap-24 py-14 text-white">
-        <div className="flex items-start justify-center flex-col gap-4 h-full">
+    <main className="bg-cover bg-[url('/home-page/main-img.svg')] bg-center text-white">
+      <div className="container flex flex-col justify-between min-h-[calc(100vh-133px)] gap-20 sm:gap-0">
+        {/* Content over background*/}
+        <div className="flex flex-col justify-center items-center sm:items-start pt-[125px]">
           <h1 className="text-4xl sm:text-6xl mb-3">{trans("title")}</h1>
-          <p className="text-xl sm:text-[35px] mb-[25px] lg:mb-[36px]">
+          <p className="text-xl sm:text-[36px] leading-[2] mb-8">
             {trans("subtitle")}
           </p>
           <Link
             href="#"
-            className="flex items-center justify-center font-medium min-w-[155px] gap-[10px] bg-[#FFBF00] py-3 px-4 rounded-full text-black text-base mb-10"
+            className="flex items-center font-medium w-fit gap-[10px] bg-[#FFBF00] py-2 px-4 rounded-full text-black text-base mb-20"
           >
             <span className="relative -mt-2">{trans("buttonText")}</span>
             <Image
@@ -44,17 +35,17 @@ const Hero = () => {
           </Link>
         </div>
 
-        <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+        <ul className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 pb-9">
           {boxes.map((item, index) => (
-            <div className="bg-primary bg-opacity-55 py-5 px-4" key={index}>
-              <span className="block text-sm sm:text-base mb-3 font-medium">
+            <li className="bg-primary bg-opacity-55 py-3 px-4" key={index}>
+              <span className="block text-sm mb-2 font-medium">
                 {item.date}
               </span>
-              <h2 className="text-2xl sm:text-[30px] mb-4">{item.title}</h2>
-              <p className="text-sm sm:text-lg">{item.description}</p>
-            </div>
+              <h2 className="text-2xl sm:text-2xl mb-3">{item.title}</h2>
+              <p className="text-sm sm:text-base">{item.description}</p>
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
     </main>
   );

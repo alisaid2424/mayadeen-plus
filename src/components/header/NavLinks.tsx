@@ -21,10 +21,10 @@ const NavLinks = ({ onClick, trans }: Props) => (
         <Link
           href={link.href}
           onClick={onClick}
-          className="text-sm lg:text-base block whitespace-nowrap hover:text-yellow-600 tracking-wide"
+          className="text-sm lg:text-base block whitespace-nowrap hover:text-yellow-600 ltr:tracking-normal"
         >
           {link.key === "contests" ? (
-            <span className="flex items-center gap-2 ">
+            <span className="flex items-center gap-1">
               {trans(`nav.${link.key}`)}
               <span className="text-yellow-400">+</span>
             </span>
